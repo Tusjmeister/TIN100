@@ -32,7 +32,7 @@ def add_bg_from_url():
 
 add_bg_from_url()
 
-st.set_page_config(layout="wide")
+#st.set_page_config(layout="wide")
 st.write(""" # Automatisering av låneprosessen for firmaer""")
 
 st.sidebar.title("Vennligst fyll inn opplysningene her:")
