@@ -38,10 +38,10 @@ Håper dette gjør prosessen lettere.
 
 def brukerverdier():
     Real_estate = st.sidebar.selectbox("Har du eiendom?", ["Ja", "Nei"])
-    Ansatte = st.sidebar.slider("Antall ansatte", 0, 9999, 12)
+    Ansatte = st.sidebar.number_input("Antall ansatte", min_value=0, max_value=9999)
     Lanetermin = st.sidebar.slider("Lånetermin", 0, 569, 111)
-    Lanemengde = st.sidebar.slider("Lånemengde", 200, 5472000, 192687)
-    Sikkerhetsnett = st.sidebar.slider("Sikkerhetsnett", 100, 5472000, 149489)
+    Lanemengde = st.sidebar.number_input("Lånemengde", min_value=200, max_value=5472000)
+    Sikkerhetsnett = st.sidebar.number_input("Sikkerhetsnett", min_value=100, max_value=5472000)
     Ratio = Sikkerhetsnett / Lanemengde
 
     data = {
