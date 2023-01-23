@@ -11,8 +11,26 @@ from tensorflow.keras import layers, models
 
 import streamlit as st
 
+
 #
 # # In[5]:
+
+def add_bg_from_url():
+    st.markdown(
+        f"""
+        <style>
+        .stApp {{
+            background-image: url("https://wallpapercave.com/wp/wp5615348.jpg");
+            background-attachment: fixed;
+            background-size: cover
+        }}
+        <style>    
+        """,
+        unsafe_allow_html=True
+    )
+
+
+add_bg_from_url()
 
 st.set_page_config(layout="wide")
 st.write(""" # Automatisering av låneprosessen for firmaer""")
@@ -82,4 +100,4 @@ if st.button("Submit"):
 
 korr = st.checkbox("Vil du se hvordan verdiene korrelerer med hverandre?")
 if korr:
-    st.markdown("![Alt text](""https://i.gyazo.com/73b44a113c5c8641aa91f47424a7997d.png)")
+    st.markdown("![Alt text](""https://i.gyazo.com/e9f0210034106067235eddcd817d47e2.png)")
