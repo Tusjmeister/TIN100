@@ -17,16 +17,9 @@ import streamlit as st
 
 def add_bg_from_url():
     st.markdown(
-        f"""
-        <style>
-        .stApp {{
-            background-image: url("https://newfinancial.org/wp-content/uploads/2019/01/iStock-869423492-\
-            Cover-image-full-2.jpg");
-            background-attachment: fixed;
-            background-size: cover
-        }}
-        <style>    
-        """,
+        f""" <style> .stApp {{ background-image: url(
+        "https://newfinancial.org/wp-content/uploads/2019/01/iStock-869423492-Cover-image-full-2.jpg"); 
+        background-attachment: fixed; background-size: cover }} <style> """,
         unsafe_allow_html=True
     )
 
