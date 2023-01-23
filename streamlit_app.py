@@ -82,4 +82,4 @@ if st.button("Submit"):
 
 korr = st.checkbox("Vil du se hvordan verdiene korrelerer med hverandre?")
 if korr:
-    st.markdown("![Alt text](""https://i.gyazo.com/9377d36c2651d93ce371c88be2f23a42.png)")
+    st.markdown("![Alt text](""https://i.gyazo.com/73b44a113c5c8641aa91f47424a7997d.png)")
