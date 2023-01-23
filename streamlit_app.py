@@ -65,7 +65,7 @@ st.write("")
 st.write("")
 st.write("")
 
-st.write(""" ## Se om de fortsatt får lån dersom man endrer noen parametere""")
+st.write(""" ## Se om firmaet fortsatt får lån dersom man endrer noen parametere""")
 st.write(""" ### Dine nye parametere""")
 st.table(pred_user)
 
