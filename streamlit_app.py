@@ -96,6 +96,7 @@ if st.button("Submit"):
         st.write("Basert på dine oppgitte data er søknaden om lån avslått ")
     else:
         st.write("Basert på dine oppgitte data er søknaden om lån godkjent ")
-# # In[27]:
-#
-# # In[28]:
+
+korr = st.check_box("Vil du se hvordan verdiene korrelerer med hverandre?")
+if korr:
+    st.markdown("![Alt text](""https://i.gyazo.com/9377d36c2651d93ce371c88be2f23a42.png)")
