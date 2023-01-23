@@ -37,7 +37,7 @@ st.sidebar.title("Vennligst fyll inn opplysningene her:")
 #
 st.sidebar.header("Inndata verdier")
 
-st.text("---")
+st.write("---")
 """
 Velkommen kjære bankansatt! \n
 Hvis du er interessert i å se om et firma kan betjene et lån, kan du prøve dette programmet her.
