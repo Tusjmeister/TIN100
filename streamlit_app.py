@@ -37,12 +37,14 @@ st.sidebar.title("Vennligst fyll inn opplysningene her:")
 #
 st.sidebar.header("Inndata verdier")
 
-st.markdown(
-    """***Velkommen kjære bankansatt! \n
-    Hvis du er interessert i å se om et firma kan betjene et lån, kan du prøve dette programmet her.
-    Det eneste du må gjøre er å fylle inn opplysningene til firmaet, så gjør programmet resten for deg.
-    Husk at dette bare er estimatorer basert på data hentet fra tidligere søkere. \n
-    Håper dette gjør prosessen lettere.***""")
+st.markdown("")
+"""
+*Velkommen kjære bankansatt!* \n
+Hvis du er interessert i å se om et firma kan betjene et lån, kan du prøve dette programmet her.
+Det eneste du må gjøre er å fylle inn opplysningene til firmaet, så gjør programmet resten for deg.
+Husk at dette bare er estimatorer basert på data hentet fra tidligere søkere. \n
+Håper dette gjør prosessen lettere.
+"""
 
 
 def brukerverdier():
