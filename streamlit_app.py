@@ -17,7 +17,7 @@ import streamlit as st
 st.set_page_config(layout="wide")
 st.write(""" # Automatisering av låneprosessen for firmaer""")
 
-st.sidebar.title("Vennligst fyll inn opplysningene dine her:")
+st.sidebar.title("Vennligst fyll inn opplysningene her:")
 #
 #
 #
@@ -28,9 +28,9 @@ st.sidebar.header("Inndata verdier")
 
 st.write("---")
 """
-Velkommen kjære bankkunde! \n
+Velkommen kjære bankansatt! \n
 Hvis du er interessert i å se om et firma kan betjene et lån, kan du prøve dette programmet her.
-Det eneste du må gjøre er å fylle inn opplysningene dine, så gjør programmet resten for deg.
+Det eneste du må gjøre er å fylle inn opplysningene til firmaet, så gjør programmet resten for deg.
 Husk at dette bare er estimatorer basert på data hentet fra tidligere søkere. \n
 Håper dette gjør prosessen lettere.
 """
@@ -57,21 +57,6 @@ def brukerverdier():
     return features
 
 
-#
-#
-#
-# # In[26]:
-#
-#
-# # Scaling the data with StandardScaler()
-#
-#
-#
-# # Transform (standardise) both X_train and X_test with mean and STD from
-# # training data
-#
-#
-#
 pred_user = brukerverdier()
 st.write("")
 st.write("")
@@ -79,17 +64,15 @@ st.write("")
 st.write("")
 st.write("")
 st.write("")
-# st.dataframe(data=pred_user, width=1200, height=768)
-# st.dataframe(pred_user)
+
 st.write(""" ## Se om de fortsatt får lån dersom man endrer noen parametere""")
 st.write(""" ### Dine nye parametere""")
 st.table(pred_user)
-# st.write(pred_user)
 
 pred_user["Eiendom"].replace({"Ja": 1, "Nei": 0}, inplace=True)
 # If button is pressed
 if st.button("Submit"):
-    # Unpickle classifier
+    # Load classifier
     ann = models.load_model("tin100-ann-model.h5")
     pred_streamlit = ann.predict(pred_user)
     if pred_streamlit == 1:
