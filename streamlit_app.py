@@ -20,7 +20,7 @@ def add_bg_from_url():
         f"""
         <style>
         .stApp {{
-            background-image: url("https://wallpapercave.com/wp/wp5615348.jpg");
+            background-image: url("https://scontent.fsvg2-1.fna.fbcdn.net/v/t1.15752-9/326796901_556708563048173_5853128479637377723_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=ae9488&_nc_ohc=mdtMOswsh9QAX_TBqCN&_nc_ht=scontent.fsvg2-1.fna&oh=03_AdSK_07SnTobRZGW5UR3eBC2xAltULcj6JcVsAAsN-YdxA&oe=63F618DF");
             background-attachment: fixed;
             background-size: cover
         }}
@@ -32,7 +32,6 @@ def add_bg_from_url():
 
 add_bg_from_url()
 
-#st.set_page_config(layout="wide")
 st.write(""" # Automatisering av låneprosessen for firmaer""")
 
 st.sidebar.title("Vennligst fyll inn opplysningene her:")
