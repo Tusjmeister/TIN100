@@ -84,7 +84,7 @@ st.write("")
 
 st.write(""" ## Se om firmaet fortsatt får lån dersom man endrer noen parametere""")
 st.write(""" ### Dine nye parametere""")
-st.table(pred_user)
+st.dataframe(pred_user)
 
 pred_user["Eiendom"].replace({"Ja": 1, "Nei": 0}, inplace=True)
 # If button is pressed
