@@ -20,7 +20,8 @@ def add_bg_from_url():
         f"""
         <style>
         .stApp {{
-            background-image: url("https://scontent.fsvg2-1.fna.fbcdn.net/v/t1.15752-9/326796901_556708563048173_5853128479637377723_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=ae9488&_nc_ohc=mdtMOswsh9QAX_TBqCN&_nc_ht=scontent.fsvg2-1.fna&oh=03_AdSK_07SnTobRZGW5UR3eBC2xAltULcj6JcVsAAsN-YdxA&oe=63F618DF");
+            background-image: url("https://newfinancial.org/wp-content/uploads/2019/01/iStock-869423492-\
+            Cover-image-full-2.jpg");
             background-attachment: fixed;
             background-size: cover
         }}
