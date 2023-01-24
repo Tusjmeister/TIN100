@@ -79,7 +79,7 @@ st.dataframe(pred_user)
 
 pred_user["Eiendom"].replace({"Ja": 1, "Nei": 0}, inplace=True)
 # If button is pressed
-if st.button("Submit"):
+if st.button("Aktiver modellen"):
     # Load classifier
     ann = models.load_model("tin100-ann-model.h5")
     pred_streamlit = ann.predict(pred_user)
