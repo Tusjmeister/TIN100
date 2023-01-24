@@ -30,7 +30,7 @@ st.write(""" # Automatisering av låneprosessen for firmaer""")
 
 st.sidebar.title("Vennligst fyll inn opplysningene her:")
 #
-#
+st.sidebar.subheader("Når du har valgt inndata, klikk på 'Aktiver modellen'")
 #
 # # In[6]:
 #
