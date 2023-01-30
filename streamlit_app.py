@@ -78,6 +78,8 @@ st.write(""" ##### Dine nye parametere""")
 st.dataframe(pred_user)
 
 pred_user["Eiendom"].replace({"Ja": 1, "Nei": 0}, inplace=True)
+if pred_user["Sikkerhetsnett"].values > pred_user["Lånemengde"].values:
+    pred_user["Lånemengde"].values = pred_user["Sikkerhetsnett"].values
 # If button is pressed
 if st.button("Aktiver modellen"):
     # Load classifier
